@@ -3,7 +3,7 @@
     <div id="demo">
       <div id="inner-demo">
         <h1 id="inner-demo-2">
-          <br>
+        
         </h1>
       </div>
     </div>
@@ -92,6 +92,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #demo {
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
   width: 100%;
   height: 50vh;
   background: url("") white;
@@ -101,13 +104,23 @@ export default {
   height: 0%;
   display: flex;
   align-items: left;
-  justify-content: left;
+  justify-content: center;
+  
   color: black;
   font-size: 1.5em;
 }
+#inner-demo-2{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  min-width: 510px;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
 #inner-demo h1 {
   position: relative;
-  left: 1em;
-  top: 0.75em;
+  left: 0em;
+  top: 0;
 }
 </style>
