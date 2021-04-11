@@ -1,10 +1,10 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h3>Here is a Demonstration of the Vue ParticleJs Package</h3>
     <div id="demo">
       <div id="inner-demo">
-        <h1>Hi There</h1>
+        <h1 id="inner-demo-2">
+          <br>
+        </h1>
       </div>
     </div>
     <VueParticle domId="demo" :config="particleConfig"/>
@@ -25,8 +25,8 @@ export default {
     return {
       particleConfig: {
         particles: {
-          number: { value: 300, density: { enable: true, value_area: 800 } },
-          color: { value: "#ffffff" },
+          number: { value: 150, density: { enable: true, value_area: 800 } },
+          color: { value: "#000000" },
           shape: {
             type: "circle",
             stroke: { width: 0, color: "#000000" },
@@ -39,16 +39,16 @@ export default {
             anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
           },
           size: {
-            value: 3,
+            value: 5,
             random: true,
             anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
           },
           line_linked: {
             enable: true,
             distance: 150,
-            color: "#ffffff",
+            color: "#555555",
             opacity: 0.4,
-            width: 1
+            width: 3
           },
           move: {
             enable: true,
@@ -64,7 +64,7 @@ export default {
         interactivity: {
           detect_on: "canvas",
           events: {
-            onhover: { enable: true, mode: "repulse" },
+            onhover: { enable: false, mode: "repulse" },
             onclick: { enable: true, mode: "push" },
             resize: true
           },
@@ -94,33 +94,20 @@ export default {
 #demo {
   width: 100%;
   height: 50vh;
-  background: url("") blue;
+  background: url("") white;
 }
 #inner-demo {
   width: 100%;
   height: 0%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 2em;
+  align-items: left;
+  justify-content: left;
+  color: black;
+  font-size: 1.5em;
 }
 #inner-demo h1 {
   position: relative;
-  top: 4em;
-}
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+  left: 1em;
+  top: 0.75em;
 }
 </style>

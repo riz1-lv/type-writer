@@ -1,5 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
+import TypeIt from "typeit";
+
 
 Vue.config.productionTip = false;
 
