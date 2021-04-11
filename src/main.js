@@ -21,4 +21,5 @@ new TypeIt("#inner-demo-2", {
 .type('<span style="font-family: Segoe UI Emoji">👋</span>', {
   html: true
 })
+.pause(750)
 .go()

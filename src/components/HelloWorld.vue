@@ -97,7 +97,7 @@ export default {
   z-index: 1;
   width: 100%;
   height: 50vh;
-  background: url("") white;
+  background: url("")wheat;
 }
 #inner-demo {
   width: 100%;
@@ -107,7 +107,7 @@ export default {
   justify-content: center;
   
   color: black;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 #inner-demo-2{
   display: flex;
@@ -120,7 +120,7 @@ export default {
 }
 #inner-demo h1 {
   position: relative;
-  left: 0em;
-  top: 0;
+  
+  top: 8.5rem;
 }
 </style>
