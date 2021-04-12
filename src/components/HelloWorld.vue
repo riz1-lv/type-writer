@@ -108,7 +108,7 @@ export default {
   justify-content: center;
   
   color: black;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 #inner-demo-2{
   display: flex;

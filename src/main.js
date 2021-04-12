@@ -16,10 +16,29 @@ new TypeIt("#inner-demo-2", {
   cursorSpeed: 300,
   loop: true
 }).pause(1000)
-.type("hello there")
-.type('👋')
-.type('<span style="font-family: Segoe UI Emoji">👋</span>', {
+.type('<span>👋</span>', {
+  html: true
+})
+.type("&nbspHi there! ")
+.pause(750)
+.delete()
+.pause(100)
+.type("I'm riz1-lv")
+.type('<span>👋</span>', {
   html: true
 })
 .pause(750)
+.move(-1)
+.delete(7, { deleteSpeed: 120})
+.pause(500)
+.type("&nbspRizwan Sheikh")
+.pause(1000)
+.move("END")
+.delete(14)
+.pause(500)
+.type("a developer ")
+.type('<span>&nbsp🚀</span>', {
+  html: true
+})
+.pause(1000)
 .go()
